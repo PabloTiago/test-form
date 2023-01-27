@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1>Registre-se</h1>
+    <p>Por favor, preencha este formulário com os seus dados.</p>
+    <form method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label for="nome">Nome: <input id="nome" type="text" required></label>
+            <label for="sobrenome">Sobrenome: <input id="sobrenome" type="text" required></label>
+            <label for="email">Email: <input id="email" type="email" required></label>
+            <label for="senha">Senha: <input id="senha" type="password" pattern="[a-z0-5]{8,}" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="conta-pessoal"><input name="conta" id="conta-pessoal" type="radio" class="inline"/> Conta Pessoal</label>
+            <label for="conta-empresarial"><input name="conta" id="conta-empresarial" type="radio" class="inline" /> Conta Empresarial</label>
+            <label for="termos-e-condiocoes"><input id="termos-e-condiocoes" type="checkbox" class="inline" required /> Eu declaro que li e aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições.</a></label>
+        </fieldset>
+        <fieldset>
+            <label for="foto-perfil">Foto de perfil: <input id="foto-perfil" type="file" name="file">
+            </label>
+            <label for="idade">Informe a sua idade (anos): <input id="idade" name="idade" type="number" min="13" max="120">
+            </label>
+            <label for="referrer">Por onde nos encontrou?
+                <select>
+                <option value="">(selecione uma das alternativas)</option>
+                <option value="1">site da plataforma</option>
+                <option value="2">canal do YouTube</option>
+                <option value="3">forum da plataforma</option>
+                <option value="4">outros</option>
+                </select>
+            </label>
+            <label for="bio">Conte um pouco mais sobre você:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu amo meu noivinho..."></textarea>
+              </label>
+            </fieldset>
+            <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
